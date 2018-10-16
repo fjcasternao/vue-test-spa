@@ -1,8 +1,10 @@
 <template>
   <div class="service__item">
     <div class="image__container">
-        <img :src="imgSrc"/>
-        <div class="circle__text">{{service.primaryServiceDescription[$globalVariables.lang]}}</div>
+        <router-link :to="`/service/${service.id}`">
+          <img :src="imgSrc"/>
+          <div class="circle__text">{{service.primaryServiceDescription[$globalVariables.lang]}}</div>
+        </router-link>        
     </div>
   </div>
 </template>

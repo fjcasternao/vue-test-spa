@@ -41,7 +41,7 @@ function compareOrder(a, b) {
 }
 
 export default {
-  name: 'hello',
+  name: 'container',
   data() {
     return {
       services: [],
