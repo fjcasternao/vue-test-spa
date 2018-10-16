@@ -1,0 +1,146 @@
+[  
+    {  
+       "id":"1",
+       "name":"Tintorería",
+       "type":"services",
+       "primaryServiceDescription":{  
+          "es":"Tintorería",
+          "ca":"Tintoreria",
+          "en":"Dry Cleaning"
+       },
+       "orderInstructions":{  
+          "es":"",
+          "ca":"",
+          "en":""
+       },
+       "order":"4",
+       "lastUpdated":"2018-05-30T18:45:06+0200",
+       "lastUpdatedHash":"23c6a9d494d924455381b1d29812c59b"
+    },
+    {  
+       "id":"2",
+       "name":"Arreglos de calzado",
+       "type":"services",
+       "primaryServiceDescription":{  
+          "es":"Reparación de Zapatos",
+          "ca":"Reparació de Sabates",
+          "en":"Shoe Repairs"
+       },
+       "orderInstructions":{  
+          "es":"",
+          "ca":"",
+          "en":""
+       },
+       "order":"3",
+       "lastUpdated":"2018-05-30T18:55:09+0200",
+       "lastUpdatedHash":"289c1af2be186dd84199f5335f81a65c"
+    },
+    {  
+       "id":"4",
+       "name":"Arreglos de ropa",
+       "type":"services",
+       "primaryServiceDescription":{  
+          "es":"Arreglos de Ropa",
+          "ca":"Arranjament de Roba",
+          "en":"Arrangements"
+       },
+       "orderInstructions":{  
+          "es":"",
+          "ca":"",
+          "en":""
+       },
+       "order":"0",
+       "lastUpdated":"2018-05-30T18:57:57+0200",
+       "lastUpdatedHash":"24322823c4bfcad5ca39e569f981599f"
+    },
+    {  
+       "id":"27",
+       "name":"Cápsulas de Nespresso",
+       "type":"supermarket",
+       "primaryServiceDescription":{  
+          "es":"Cápsulas de Nespresso",
+          "ca":"Càpsules de Nespresso",
+          "en":"Nespresso capsules"
+       },
+       "orderInstructions":{  
+          "es":"",
+          "ca":"",
+          "en":""
+       },
+       "order":"2",
+       "lastUpdated":"2018-05-23T19:38:19+0200",
+       "lastUpdatedHash":"212644926fa25b8f3c7697349076aab4"
+    },
+    {  
+       "id":"30",
+       "name":"Lavandería",
+       "type":"services",
+       "primaryServiceDescription":{  
+          "es":"Lavandería",
+          "ca":"Bugaderia",
+          "en":"Laundry Service"
+       },
+       "orderInstructions":{  
+          "es":"",
+          "ca":"",
+          "en":""
+       },
+       "order":"1",
+       "lastUpdated":"2018-05-30T19:24:19+0200",
+       "lastUpdatedHash":"70087499f9ef029ea30e144fa39181a8"
+    },
+    {  
+       "id":"31",
+       "name":"Pieles y Prendas Especiales",
+       "type":"open_order",
+       "primaryServiceDescription":{  
+          "es":"Pieles y Prendas Especiales",
+          "ca":"Peces Especials",
+          "en":"Fur and Special Clothing"
+       },
+       "orderInstructions":{  
+          "es":"Estos servicios pueden tardar 7-15 dias. ",
+          "ca":"Estos servicios pueden tardar 7-10 dias. ",
+          "en":"These services can take 7-10 days"
+       },
+       "order":"5",
+       "lastUpdated":"2017-06-29T21:59:24+0200",
+       "lastUpdatedHash":"66d59f64f7b3242bbc42d597a548827f"
+    },
+    {  
+       "id":"49",
+       "name":"Lentes de contacto",
+       "type":"open_order",
+       "primaryServiceDescription":{  
+          "es":"Lentes de contacto",
+          "ca":"Lents de contacte",
+          "en":"Contact Lenses"
+       },
+       "orderInstructions":{  
+          "es":"Realiza tus pedidos a través de email hola@mayordomo.io o del teléfono 93 112 6757 y te lo entregamos en tu taquilla Mayordomo.\r\n\r\nIndícanos tu graduación de ojo izquierdo y derecho en el texto.\r\n\r\n",
+          "ca":"Fes la teva comanda a través d'email a hola@mayordomo.io o del telèfon 93 112 6757 i te l'entregarem a la teva taquilla Mayordomo.\r\n\r\nIndicans la teva graduació de l'ull esquerre i ull dret al text.",
+          "en":"Place your order through email at hola@mayordomo.io or phone number 93 112 6757 and we will deliver it to your Mayordomo locker. \r\n\r\nPlease indicate your left and right eye prescription in the text.\r\n"
+       },
+       "order":"6",
+       "lastUpdated":"2018-03-01T22:22:37+0100",
+       "lastUpdatedHash":"449f68ba9069b536c38e45d7df668740"
+    },
+    {  
+       "id":"60",
+       "name":"Nømad Coffee",
+       "type":"supermarket",
+       "primaryServiceDescription":{  
+          "es":"Nømad Coffee",
+          "ca":"",
+          "en":""
+       },
+       "orderInstructions":{  
+          "es":"",
+          "ca":"",
+          "en":""
+       },
+       "order":"7",
+       "lastUpdated":"2018-04-24T23:31:41+0200",
+       "lastUpdatedHash":"3d03de62945f00b2bf41da44d14015d6"
+    }
+ ]
