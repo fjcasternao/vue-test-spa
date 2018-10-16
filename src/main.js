@@ -2,14 +2,26 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue';
 import BootstrapVue from 'bootstrap-vue';
-import VueI18n from 'vue-i18n';
+
 import App from './App';
 import router from './router';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-vue/dist/bootstrap-vue.css';
 
+const shared = new Vue({
+  data: {
+    api: 'http://localhost:3000/',
+    lang: 'es',
+  },
+});
+
+shared.install = () => {
+  Object.defineProperty(Vue.prototype, '$globalVariables', {
+    get() { return shared; },
+  });
+};
+Vue.use(shared);
 Vue.use(BootstrapVue);
-Vue.use(VueI18n);
 Vue.config.productionTip = false;
 
 /* eslint-disable no-new */

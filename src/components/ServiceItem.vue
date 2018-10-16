@@ -1,11 +1,10 @@
 <template>
-    <b-row> 
-        <div class="image__container">
-            <img :src="imgSrc"/>
-            <div class="circle__text">{{imgText}}</div>
-        </div>
-    </b-row>
-
+  <div class="service__item">
+    <div class="image__container">
+        <img :src="imgSrc"/>
+        <div class="circle__text">{{service.primaryServiceDescription[$globalVariables.lang]}}</div>
+    </div>
+  </div>
 </template>
 
 <script lang="js">
@@ -16,7 +15,7 @@
         default: 'http://placehold.it/300x300',
         type: String,
       },
-      imgText: String,
+      service: Object,
     },
     mounted() {
 
@@ -35,12 +34,18 @@
     position: relative;
     height: 300px;
     width: 300px;
-    margin: 30px;
-    border-radius: 150px;
+    margin: auto;
+    border-radius: 50%;
+    padding: 5px;
+    border: 5px solid white;
+    background-color: #9CBDCD;
     overflow: hidden;
   }
 
-
+  .service__item {
+    width: 50%;
+    height: 33%;
+  }
 
   .circle__text {
     width: 100%;
@@ -48,7 +53,7 @@
     font-size: 25px;
     text-align: center;
     bottom: 0px;
-    background-color: green;
+    background-color: #C5D6DE;
     position: absolute
   }
 </style>
