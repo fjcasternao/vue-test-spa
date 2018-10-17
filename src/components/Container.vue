@@ -4,6 +4,14 @@
           <img src="https://mayordomo.io/w2/img/logo.svg"  width="50%" style="margin: auto"/>
       </b-row>
       <b-row class="content">
+
+        <div class="paginator paginator--left" @click="previousPage()" v-if="pageOffset > 0">
+          <div></div>
+        </div>
+        <div class="paginator paginator--right" @click="nextPage()" v-if="hasMorePages()">
+          <div></div>
+        </div>
+
         <div class="content__header" style="width: 100%">Selecciona un servicio</div>
         <service-item v-for="a in services.slice(pageOffset, pageOffset + pageLimit)" v-bind:service="a" :key="a.id"></service-item>
       </b-row>
@@ -65,6 +73,18 @@ export default {
     setLanguage(val) {
       this.$globalVariables.lang = val;
     },
+
+    previousPage() {
+      this.pageOffset = this.pageOffset - this.pageLimit;
+    },
+
+    nextPage() {
+      this.pageOffset += this.pageLimit;
+    },
+
+    hasMorePages() {
+      return this.pageOffset + this.pageLimit < this.services.length;
+    },
   },
 
 };
@@ -79,6 +99,7 @@ export default {
 
 .footer {
   height: 15vh;
+  position: relative;
   background-color: #F3F3F5;
 }
 
@@ -118,5 +139,36 @@ export default {
   margin: 20px;
 }
 
+.paginator {
+  position: absolute;
+  width: 50px;
+  height: inherit;
+  color: white;
+}
+
+.paginator > div {
+  position: relative;
+  top: 50%;
+}
+
+.paginator--left{
+  left: 15px;
+}
+
+.paginator--left > div{
+  border-style: solid;
+  border-width: 65px 40px 65px 0;
+  border-color: transparent #ffffff transparent transparent;
+}
+
+.paginator--right{
+  right: 15px;
+}
+
+.paginator--right > div{
+  border-style: solid;
+  border-width: 65px 0 65px 40px;
+  border-color: transparent transparent transparent #ffffff;
+}
 
 </style>
